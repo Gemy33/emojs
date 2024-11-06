@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodMate Mood Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MoodMate Mood Tracker</h1>
+        <div class="emoji-selection">
+            <!-- Each emoji button triggers a JavaScript function to display the message -->
+            <button onclick="updateMood('😊')">😊</button>
+            <button onclick="updateMood('😢')">😢</button>
+            <button onclick="updateMood('😠')">😠</button>
+            <button onclick="updateMood('😌')">😌</button>
+            <button onclick="updateMood('😆')">😆</button>
+        </div>
+        <div class="display-area">
+            <span id="selected-emoji">😊</span>
+            <p id="message">Select your mood to get a motivational message!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
